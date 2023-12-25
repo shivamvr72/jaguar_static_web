@@ -1,0 +1,49 @@
+<style>
+h1{
+    color: aliceblue;
+    background-color: #063c4b80;
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3%;
+}
+p{
+    color: aliceblue;
+    padding: 3%;
+    margin: 0;
+}
+.divinfo{
+    background-color: #04042474;
+}
+body{
+    background-color: #0b0b5474;
+}
+#bodyculture body{
+    background-color: #06061c;
+}
+.cars{
+    width: 95%;
+    height: 95%;
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+}
+.d1{
+    
+    box-sizing: border-box;
+    display: flex;
+    margin: 2%;
+}
+#imgdiv{
+    margin-top: 5px;
+    display: block;
+}
+.textdiv{
+    
+    margin: auto;  
+    padding: 5px;
+    color:aliceblue;
+}
+#info{
+    display: flex;
+    padding: 5% 0 6% 0;
+}
+</style>

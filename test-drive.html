@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguar Test Drive</title>
+    <link rel="icon" href="./jaguar_pic/icon.jpg" type="x-image/icon">
+    <script src="./jaguar.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./tw_car_website.css">
+    <style>
+        #form{
+            border: 1px solid gray;
+            padding: 5%;
+            padding-top: 10%;
+            margin: auto; 
+        }
+        td{
+            padding: 5%;
+            margin: 5%;
+        }
+        button, select, #dt{
+            width: 98%;
+            font-size: 18px;
+        }
+        .ip{
+            font-size: 18px;
+            width: 48%;
+        }
+        #tac{
+            text-align: left;
+        }
+        #imgleft{
+            display: flex;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+<body id="t">
+    <div id="headnav">
+        <div id="head">
+        <header>
+            <h1 id="emptlogo"></h1>
+            <a href="./car_website_tw.html" ><img src="./jaguar_pic/jaglogo.jpg" alt="" width="100px" height="40px" id="logo"></a>
+            
+            <h1 class="right1" ></h1>
+            <div class="dp">
+                <img src="./jaguar_pic/search.jpg" onclick="search()" class="right" id="searchimg">
+                <div id="mdp" class="dpc">
+                    <input type="text" id="ip" placeholder="search" onkeyup="filter()">
+                    <a href="./f-pace.html">F-face</a>
+                    <a href="./f-type.html">F-type</a>
+                    <a href="./xf.html">xf</a>
+                    <a href="./jaguar_future.html">vision gt</a>
+                    <a href="./jaguar_culture.html">classic</a>
+                    <a href="./test-drive.html">test-drive</a>
+                </div>
+            </div>
+            <a href="https://www.jaguar.in/retailer-locator/index.html" ><img src="./jaguar_pic/pin.jpg" alt="" class="rightlocate"></a>
+        </header>
+    </div>
+    </div>
+    <div id="form">
+        <form action="" onsubmit="return false;">
+            <thead>
+                <caption>
+                    <div id="imgleft">
+                        <img src="./vehicles/jaguar-logo.png" alt="" width="10%" height="7%">
+                    </div>
+                </caption>
+                <hr>
+            </thead>
+            <tbody>
+                <caption>
+                    <h1>Test-Drive/Inquiry</h1>
+                </caption>
+                <tr>
+                    <td colspan="2">
+                        <select name="model" id="mod" width="80">
+                            <option value="">Book Test-Drive/Inquiry</option>
+                            <option value="Test-Drive">Test-Drive</option>
+                            <option value="Inqury Request">Inquiry Request</option>
+                        </select>
+                    </td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td><input class="ip" type="text" id="fname" placeholder="First Name*" required></td>
+                    <td><input class="ip" type="text" id="lname" placeholder="Last Name*" required></td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td><input class="ip" type="email" placeholder="Email*" required></td>
+                </tr>
+                <tr>
+                    <td><input class="ip" type="telephone" placeholder="Mobile*" minlength="5" maxlength="12" required></td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td colspan="2">
+                        <select name="model" id="mod" width="80" required>
+                            <option value="">Which Model Are You Interested In?</option>
+                            <option value="jaguar f-type">F-TYPE</option>
+                            <option value="jaguar f-pace">F-PACE</option>
+                            <option value="jaguar xj">XF</option>
+                        </select>
+                    </td>
+                </tr>
+                <br><br>
+                <tr>
+                    <select name="city" id="city" required>
+                        <option value="">Select Nearest City</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Surat">Surat</option>
+                    </select>
+                </tr>
+                <br><br>
+                <tr>
+                    <td><input class="ip" type="date" placeholder="Select Date"  id="dt" required></td>
+                </tr>
+                <br><br>
+                <div id="tac">
+                    <tr>
+                        <td><input type="checkbox" id="ch" value="1" onclick="confiremed()" required>Agree With <a href="https://www.jaguar.in/terms-conditions.html">Terms and Condition</a></td>
+                    </tr>
+                </div>
+                <br><br>
+                <p>*To book the Jaguar luxury car meet nearest <a href="https://www.jaguar.in/retailer-locator/index.html">Dealership</a></p>
+                <button type="submit" class="btn" onclick="testdrive()">SUBMIT</button>
+            </tbody>
+        </form>
+    </div>
+    <div>
+        <script src="./jaguar.js" type="text/javascript"></script>
+        <footer>
+            <h2>© JAGUAR LAND ROVER LIMITED 2022</h2>
+            <p>Registered Office: Abbey Road, Whitley, Coventry CV3 4LF
+               <br> Registered in England No: 1672070</p>
+            <p style="text-align: left; padding:10px 100px;">There is currently a global shortage of semi-conductor components. Jaguar Land Rover India Limited (JLRIL) is affected by this shortage and as a result, certain Jaguar and Land Rover products may not be available and delivery timelines for some products may be extended by authorised Jaguar Land Rover Retailers. Please contact your authorised Jaguar Land Rover Retailer for further updates.</p>
+            <p style="text-align: left; padding:10px 100px;">The fuel consumption figures provided are as a result of official manufacturer's tests in accordance with EU legislation. A vehicle's actual fuel consumption may differ from that achieved in such tests and these figures are for comparative purposes only.</p>
+            <p style="text-align: left; padding:10px 100px;">Important note on imagery & specification. We are living through exceptional times. Due to the Covid pandemic we have been prevented or delayed in the creation of new images of current model years. Now the global impact of micro-chip shortages is further affecting build specifications, options and launch timings. Until this unique event settles, please note that many images cannot be updated to 23 model year specifications. Features, options, trim and colour schemes will differ from many images. Customers are urged to consult your local Retailer for detailed 23 model year specifications and do not base an order on marketing imagery and specification alone.</p>
+            <p style="text-align: left; padding:10px 100px;">The information, specification, engines and colours on this website are based on European specification and may vary from market to market and are subject to change without notice. Some vehicles are shown with optional equipment and retailer-fit accessories that may not be available in all markets. Please contact your local retailer for local availability and prices.s</p>
+        </footer>
+    </div>
+
+</body>
+</html>
